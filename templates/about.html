@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <!-- Incluir el CSS de Leaflet -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+      <!-- Incluir el script de Leaflet -->
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+       <!-- Favicon -->
+       <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    
+        <title>Portafolio - Sobre mi</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+<body>
+
+    <div class="contenedor-header">
+        <header>
+          <div class="logo">
+            <a href="#">Charles Revolo</a>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li><a href="/index.html" onclick="seleccionar()">INICIO</a></li>
+              <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+              <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+              <li>
+                <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+              </li>
+              <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+              <li><a href="/contact.html" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </header>
+      </div>
+      
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+          <h2>Sobre Mí</h2>
+          <p>
+            <span>Hola, soy Charles Revolo.</span> Soy estudiante en desarrollo de
+            sistemas de información, apasionado por aprender y aplicar tecnologías
+            que resuelvan problemas reales. Mi objetivo es contribuir al
+            desarrollo de soluciones innovadoras en el ámbito de la tecnología y
+            seguir creciendo como profesional.
+          </p>
+  
+          <div class="fila">
+            <!-- datos personales -->
+            <div class="col">
+              <h3>Datos Personales</h3>
+              <ul>
+                <li>
+                  <strong>Cumpleaños</strong>
+                  20-12-2005
+                </li>
+                <li>
+                  <strong>Teléfono</strong>
+                  +51 995 170 197
+                </li>
+                <li>
+                  <strong>Email</strong>
+                  i2317251@continental.edu.pe
+                </li>
+                <li>
+                  <strong>Dirección</strong>
+                  Las Colinas S/N - San Agustin de Cajas
+                </li>
+                <li>
+                  <strong>Cargo</strong>
+                  <span>ESTUDIANTE</span>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- intereses -->
+            <div class="col">
+              <h3>Intereses</h3>
+              <div class="contenedor-intereses">
+                <div class="interes">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span>JUEGOS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span>MUSICA</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>VIAJAR</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-tree"></i>
+                  <span>PAISAJES</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-person-hiking"></i>
+                  <span>DEPORTE</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <span>TECNOLOGÍA</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-car"></i>
+                  <span>AUTOS</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>FOTOS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </div>
+      </section>
+  
+      <!-- SECCION SKILLS -->
+      <section class="skills" id="skills">
+        <div class="contenido-seccion">
+          <h2>Skills</h2>
+          <div class="fila">
+            <!-- Technical Skill -->
+            <div class="col">
+              <h3>Technical Skills</h3>
+              <div class="skill">
+                <span>Javascript</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>25%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Figma</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>60%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>C#</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>30%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Angular</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>30%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Professional Skills -->
+            <div class="col">
+              <h3>Professional Skills</h3>
+              <div class="skill">
+                <span>Comunicación</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Trabajo en Equipo</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Creatividad</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Dedicación</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>50%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Empatia</span>
+                <div class="barra-skill">
+                  <div class="progreso">
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- SECCION CURRICULUM -->
+      <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+          <h2>Curriculum</h2>
+          <div class="fila">
+            <div class="col izquierda">
+              <h3>Educación</h3>
+              <div class="item izq">
+                <h4>Desarrollo de Sistemas de Información</h4>
+                <span class="casa">Instituto Continental</span>
+                <span class="fecha">2023 - Actualidad</span>
+                <p>
+                  Actualmente soy estudiante de 5to ciclo de la carrera de
+                  Desarrollo de Sistemas de Información, con un enfoque en el
+                  desarrollo de aplicaciones web y móviles.
+                </p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>Educación Secundaria</h4>
+                <span class="casa">I.E. San Agustín</span>
+                <span class="fecha">2018 - 2022</span>
+                <p>
+                  Finalicé mi educación secundaria en la I.E. San Agustín, ubicada
+                  en San Agustín de Cajas, adquiriendo una sólida base en
+                  matemáticas y ciencias.
+                </p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col derecha">
+              <h3>Experiencias</h3>
+              <div class="item der">
+                <h4>Desarrollo de Aplicaciones Web</h4>
+                <span class="casa">Proyecto Personal</span>
+                <span class="fecha">2024 - Actualidad</span>
+                <p>
+                  Desarrollo de una aplicación web utilizando C#, MySQL y Angular,
+                  con funcionalidades avanzadas para la gestión de datos y
+                  experiencia de usuario.
+                </p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+              <div class="item der">
+                <h4>Desarrollo de Aplicaciones Móviles</h4>
+                <span class="casa">Proyecto Personal</span>
+                <span class="fecha">2024 - Actualidad</span>
+                <p>
+                  Creación de una aplicación móvil con Flutter, enfocada en
+                  brindar soluciones innovadoras y diseño centrado en el usuario.
+                </p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- SECCION PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+          <h2>PORTFOLIO</h2>
+          <div class="galeria">
+            <div class="proyecto">
+              <img src="img/pv1.png" alt="App Web" />
+  
+              <div class="overlay">
+                  <a href="https://pollos-rivera.web.app/" target="_blank">
+                      <h3>Diseño Creativo</h3>
+                      <p>App Web</p>
+                  </a>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+</body>
+</html>
